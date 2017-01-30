@@ -136,8 +136,6 @@ int main(int argc,char **argv)
         	imshow("w", src);
                 imshow("k",thresh1);
  		imshow("l",thresh2);
-                cout<<"center1"<<center1[0].x<<center1[0].y<<endl;
-		cout<<"center1"<<center2[0].x<<center2[0].y<<endl;
         	waitKey(20); // waits to display frame
     	}
     	waitKey(0);

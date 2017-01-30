@@ -1,36 +1,3 @@
-/*#include <ros/ros.h>
-#include <std_msgs/String.h>
-int counts;
-void chatterCallback(const std_msgs::String::ConstPtr& msg)
-{
-  ++counts;
-  ROS_INFO("I heard: [%s]", msg->data.c_str());
-}
-
-
-int main(int argc, char **argv)
-{
-  ros::init(argc, argv, "listener");
-  
-  counts=0;
-  
-	 ros::NodeHandle n;
-	ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
-
-	while (ros::ok())
-	{
-        ++counts;
-	ros::spinOnce();
-	sleep(1.0);
-        if(counts > 100)
-        ros::shutdown();
-	//printf("\n%d\n",counts);
-	}
-	return 0;
-  
-
-  return 0;
-}*/
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
@@ -147,5 +114,3 @@ return 0;
   	
 }
 	
-
-
