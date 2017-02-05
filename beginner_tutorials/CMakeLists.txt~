@@ -38,6 +38,7 @@ include_directories(
 add_executable(hello src/hello.cpp)
 add_executable(hi src/hi.cpp)
 target_link_libraries(hello ${catkin_LIBRARIES})
+target_link_libraries(hi ${catkin_LIBRARIES})
 
 
 #############

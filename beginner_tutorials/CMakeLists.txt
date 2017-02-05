@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 find_package(OpenCV REQUIRED) 
-
+find_package(roslaunch)
 ###################################
 ## catkin specific configuration ##
 ###################################

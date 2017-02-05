@@ -1,0 +1,5 @@
+<launch>
+
+<node name="hi" pkg="beginner_tutorials" type="timepass" output="screen"/>
+
+</launch>
