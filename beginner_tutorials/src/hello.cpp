@@ -1,10 +1,12 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
+#include<beginner_tutorials/hi_msg.h>
+using namespace std;
 int counts;
-void chatterCallback(const std_msgs::String::ConstPtr& msg)
+void chatterCallback(const beginner_tutorials::hi_msg& msg)
 {
   ++counts;
-  ROS_INFO("I heard: [%s]", msg->data.c_str());
+  cout<<"name "<<(char)msg.name<<endl;
 }
 
 
@@ -19,11 +21,10 @@ int main(int argc, char **argv)
 
 	while (ros::ok())
 	{
+        ROS_INFO("on reading");
         ++counts;
 	ros::spinOnce();
 	sleep(1.0);
-        if(counts > 100)
-        ros::shutdown();
 	//printf("\n%d\n",counts);
 	}
 	return 0;
