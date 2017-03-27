@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(beginner_tutorials)
+project(hiker)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -16,7 +16,7 @@ find_package(OpenCV REQUIRED)
 find_package(roslaunch)
 add_message_files(
   FILES
-  hmsg.h
+  hi_msg.msg
 )
  generate_messages()
 ###################################
